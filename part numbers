@@ -1,0 +1,13 @@
+count=0
+old=0
+partNum=int(input("enter a 4 digit part number"))
+while partNum!="9999":
+  if len(str(partNum))==4:
+    count=count+1
+  else:
+    print("make sure you are entering a 4 digit number")
+    lastDigit=partNum%10
+    if lastDigit==6 or lastDigit==7 or lastDigit==8:
+      old=old+1
+print("total number of part numbers:",count)
+print("total number of old models:",old)

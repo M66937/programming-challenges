@@ -1,0 +1,4 @@
+highestNum=int(input("enter the highest number"))
+multiplier=int(input("enter the multiplier"))
+for i in range(0,highestNum//multiplier+1):
+    print(i*multiplier)
